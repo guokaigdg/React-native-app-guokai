@@ -1,8 +1,14 @@
 ### react-native 实现一个简单撸猫社区
+琐碎时间做, 争取在农历新年前完成, 感兴趣的小伙伴可以一起来加入啊 
+搞基热线
+> email: guokaigdg@gmail.com
+> wechat:guokaigdg
+
 #### 开发环境
 > eact-native-cli: 2.0.1 <br>
 > node: v8.9.4 <br>
 > macOS Mojave 版本10.14.1
+> 暂时只开发安卓端
 
 startDate: 2018/12/17
 
