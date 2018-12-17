@@ -1,7 +1,7 @@
 ### react-native 实现一个简单撸猫社区
-琐碎时间做, 争取在农历新年前完成, 感兴趣的小伙伴可以一起来加入啊 
-搞基热线
-> email: guokaigdg@gmail.com
+完全是琐碎项目, 随机做, 争取在农历新年前完成, 感兴趣的小伙伴可以一起来加入啊 
+来吧 有基情的年轻人
+> email: guokaigdg@gmail.com <br>
 > wechat:guokaigdg
 
 #### 开发环境
