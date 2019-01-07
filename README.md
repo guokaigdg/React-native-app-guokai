@@ -1,6 +1,5 @@
-### react-native 实现一个简单撸猫社区
-完全是琐碎项目, 随机做, 争取在农历新年前完成, 感兴趣的小伙伴可以一起来加入啊 
-来吧 有基情的年轻人
+### react-native 练手电商APP
+业余时间学习下React-native, 感兴趣的可以来一起交流下
 > email: guokaigdg@gmail.com <br>
 > wechat:guokaigdg
 
@@ -8,7 +7,7 @@
 > eact-native-cli: 2.0.1 <br>
 > node: v8.9.4 <br>
 > macOS Mojave 版本10.14.1
-> 暂时只开发安卓端
+> 暂时ios在Simulator测试
 
 startDate: 2018/12/17
 
@@ -16,5 +15,6 @@ startDate: 2018/12/17
 (2018-12-17 - 2019-02-05)
 
 2018/12/17:
-
-2018/12/18:
+一时冲动准备要做了
+2019/1/7
+创建第一个页面,并且创建一个轮播图
