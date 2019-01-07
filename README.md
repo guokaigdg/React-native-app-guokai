@@ -6,7 +6,7 @@
 #### 开发环境
 > eact-native-cli: 2.0.1 <br>
 > node: v8.9.4 <br>
-> macOS Mojave 版本10.14.1
+> macOS Mojave 版本10.14.1 <br>
 > 暂时ios在Simulator测试
 
 startDate: 2018/12/17
