@@ -30,11 +30,11 @@ export default class App extends Component{  //主页面
       {title:'这个杀手不太冷'},
       {title:'阿甘正传'},
       {title:"霸王别姬"},
-      {title:"美丽人生"},
-      {title:"美丽人生"},
-      {title:"美丽人生"},
-      {title:"美丽人生"},
-      {title:"美丽人生"},
+      {title:"美丽人生1"},
+      {title:"美丽人生2"},
+      {title:"美丽人生3"},
+      {title:"美丽人生4"},
+      {title:"美丽人生5"},
     ];
     let dataSource = new ListView.DataSource({
       rowHasChanged:(row1, row2)=> row1 !== row2
