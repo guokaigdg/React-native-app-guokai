@@ -23,5 +23,5 @@ startDate: 2018/12/17
 
 #### 2019/1/8
  - 给搜索按钮/轮播图片添加点击事件 <Button onPress={()=>Alert.alert('点击了按钮','点击OK关闭',null)}>
- - 状态栏目添加了网络请求状态/状态栏颜色 <StatusBar>
-  注意区分Android/ios不同表现
+ - 状态栏目添加了网络请求状态/状态栏颜色  <br>
+  注意区分Android/ios不同表现 <StatusBar>
