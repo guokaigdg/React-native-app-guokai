@@ -23,7 +23,7 @@ startDate: 2018/12/17
 
 #### 2019/1/8
  - 给搜索按钮/轮播图片添加点击事件   <br>
-   搜索:直接到<Buttoon> ps:<Button ==onPress==={()=>Alert.alert('点击了按钮','点击OK关闭',null)}><br>
-   轮播图/ListView : ==<TouchableHighlight>==
+   搜索:直接到<Buttoon> ps:<Button onPress={()=>Alert.alert('点击了按钮','点击OK关闭',null)}><br>
+   轮播图/ListView : <TouchableHighlight>
  - 状态栏目添加了网络请求状态/状态栏颜色  <br>
-  注意区分Android/ios不同表现,使用:==StatusBar==组件
+  注意区分Android/ios不同表现,使用:StatusBar组件
