@@ -6,155 +6,144 @@
  * @flow
  */
 import React, {Component} from 'react';
-import {
-  Text,
+import {Text,
         View,
+        ListView,
+        StyleSheet,
         Image,
         Alert,
         AppRegistry,
         Platform,
         Button,
-        StyleSheet,
         TouchableHighlight,
         ImageBackground,
         TextInput,
+        ScrollView,
+        Dimensions,
+        StatusBar,
+       // NavigationExperimental,
       } from 'react-native';
-      
-      class Blink extends Component {
-        constructor(props) {
-          super(props);
-          this.state = { isShowingText: true };
-      
-          // 每1000毫秒对showText状态做一次取反操作
-          setInterval(() => {
-            this.setState(previousState => {
-              return { isShowingText: !previousState.isShowingText };
-            });
-          }, 1000);
-        } 
-        render() {
-          // 根据当前showText的值决定是否显示text内容
-          if (!this.state.isShowingText) {
-            return null;
-          }
-          return (
-            <Text>{this.props.text}</Text>
-          );
-        }
-      }
+
+//const REQUEST_URL = 'https://api.douban.com/v2/movie/top250'
 export default class App extends Component{  //主页面
-  render() {
-    let pic = {
-      uri: 'https://img-blog.csdnimg.cn/20181209132253692.jpg'
+  constructor(props){
+    super(props);
+    this.state = {
+        currentPage:0
     };
-    return (
-      <View>
-         <View style={{height:200}} /> 
-             {/* 闪烁文字 */}
-              <Text style={styles.welcome}>
-                <Blink text= '傻逼 你好'/> 
-              </Text>
-            {/*image 居中显示*/}
-            <View style={{alignItems:'center'}}>  
-              
-              <Image source={pic} style={styles.image}/>
-            </View>
-            {/* 账户 */}
-            <View accessible={true} accessibilityLabel = 'count' style = {styles.inputWrap} accessibilityLabel = 'username'>  
-                <Text> 账户 </Text>
-                <View style={styles.dividingLine} />
-                <TextInput placeholder = {'Your Account'} />
-            </View>        
-            {/*密码*/}
-            <View accessible={true} accessibilityLabel = 'passwd' style = {styles.inputWrap} accessibilityLabel = 'passwd'>  
-                <Text>密码</Text>
-                <View style={styles.dividingLine} />
-                <TextInput placeholder = {'Your Password'} />
-            </View> 
-            <View style={{height:10}} /> 
-            <View style={styles.login}>
-            <Button
-                onPress={() => {
-                Alert.alert("登录测试项");
-              }}
-              title="登录"
-            />
-            </View>
+  }
+  render(){
+    return(
+      <View style={styles.container}>
+        <StatusBar 
+          backgroundColor = {'pink'}   //设置顶部状态栏背景颜色, 仅在Android有效
+          barStyle = {'default'}              //设置默认样式
+          networkActivityIndicatorVisible = {true}  //显示正在的网络请求状态, 仅在ios有效
+        ></StatusBar>
+        <View style={styles.searchbar}>
+          <TextInput style={styles.input} placeholder='搜索商品'>
+          </TextInput>
+          <Button style={styles.button} title='搜索'
+           onPress = {()=>Alert.alert('你点击了搜索按钮','点击OK关闭弹窗','no') }
+          ></Button>
+        </View>
 
-            {/* <TouchableOpacity
-              accessible={true}
-              accessibilityLabel="Tap me!"
-              onPress={this._onPress}>
-              <View style={styles.button}>
-                <Text style={styles.buttonText}>Press me!</Text>
-              </View>
-            </TouchableOpacity> */}
+        <View style={styles.advertisment}>
+          <ScrollView
+            ref='scrollView'
+            horizontal={true}   //横向轮播
+            showsHorizontalScrollINdicator={false}
+            pagingEnabled={true}    //分页效果
+            >
+            <TouchableHighlight onPress = {()=> Alert.alert('你点击了轮播图片','你好呀', null)}>
+            <Text style={{width: Dimensions.get('window').width ,height:180,backgroundColor:'#5cadad'}}>
+               广告1 
+            </Text>
+            </TouchableHighlight>
+            <TouchableHighlight onPress = {()=> Alert.alert('你点击了轮播图片')}>
+            <Text style={{width:Dimensions.get('window').width ,height:180,backgroundColor:'orange'}}>
+              广告2
+            </Text>
+            </TouchableHighlight>
+            <TouchableHighlight onPress = {()=> Alert.alert('你点击了轮播图片')}>
+            <Text style={{width:Dimensions.get('window').width ,height:180,backgroundColor:'yellow'}}>
+              广告3
+            </Text>
+            </TouchableHighlight>
+            <TouchableHighlight onPress = {()=> Alert.alert('你点击了轮播图片')}>
+            <Text style={{width: Dimensions.get('window').width ,height:180,backgroundColor:'blue'}}>
+              广告4
+            </Text>
+            </TouchableHighlight>
+            <TouchableHighlight onPress = {()=>Alert.alert('你点击了轮播图')}> 
+            <Text style={{width: Dimensions.get('window').width ,height:180,backgroundColor:'black'}}>
+              广告5
+            </Text>
+            </TouchableHighlight>
 
+          </ScrollView>
+        </View>
+        <View style={styles.products}>
+          <Text>
+          商品列表
+          </Text>
+
+
+        </View>
       </View>
     );
   }
+  componentDidMount(){
+    this._startTimer();
+  }
+  componentWillUnmount(){
+    clearInterval(this.interval);
+  }
+  _startTimer(){
+    this.interval = setInterval(() =>{
+      nextPage = this.state.currentPage + 1;
+      if(nextPage >= 5){
+        nextPage = 0;  //如果翻滚到最后一页,下次翻滚第一页
+      }
+      this.setState({currentPage:nextPage});
+        const offSetX = nextPage * Dimensions.get('window').width;
+        this.refs.scrollView.scrollResponderScrollTo({ x:offSetX, y:0, animated:true});
+    },2000);   //定时器间隔时间20000毫秒
+  }
 }
-// StyleSheet.create来集中定义组件的样式
 const styles = StyleSheet.create({
-  welcome:{
-    color: 'pink',
-    textAlign: 'center',
-  },
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  image: {
-    width:200, 
-    height:200,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-  stretch:{
-    width: 50,
-    height: 200,
-  },
-  login:{
-    margin:20,
-    borderRadius:16,
-  },
-  loginBtn: {
-    width: 260,
-    height: 36,
-    borderRadius: 16,
-    backgroundColor: '#9a74f9',
-    shadowColor: '#9a74f9',
-    shadowOffset: { width: 0, height: 2 },
-    shadowRadius: 4,
-    flexDirection: 'row',
-    shadowOpacity: 0.7,
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginTop: 40,
-  },
-  dividingLine: {
-    marginLeft: 4,
-    height: 22,
-    width: 1,
-    backgroundColor: '#474455',
-  },
-  inputWrap: {
-    width: 240,
-    height: 44,
-    marginTop: 10,
-    flexDirection: 'row',
-    justifyContent: 'flex-start',
-    alignItems: 'center',
-    borderBottomWidth: 1,
-    borderBottomColor: '#b4b4b4',
-  },
+    container:{
+      flex:1,
+      //padding:23,
+    },
+    searchbar:{
+      marginTop: Platform.OS === 'ios' ? 20 :0,
+      height: 40,
+      flexDirection: 'row',   //子元素在父容器中的排列位置 row横向,culumn纵向
+      //justifyContent: 'center', //横向
+      //alignItems:'center',  //纵向
+    },
+    input:{
+      flex:1,
+      borderColor: 'gray',
+      borderWidth: 2,
+      borderRadius: 5,
+    },
+    button:{
+      flex:1,
+    },
+    advertisment:{
+      //marginTop: 20,
+      height: 180,
+      //flexDirection:'culumn',
+    },
+    products:{
+      flex:1,
+      backgroundColor: 'pink',
+      justifyContent: 'center', //横向
+      alignItems:'center',  //纵向
+    },
+})
 
-});
-
+// npm start 或者 react-native start 开启服务
 // 编译RN react-native run-android
- 
