@@ -22,6 +22,8 @@ startDate: 2018/12/17
 <img src = "https://img-blog.csdnimg.cn/20190108013736540.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70" width = '25%'>
 
 #### 2019/1/8
- - 给搜索按钮/轮播图片添加点击事件 <Button onPress={()=>Alert.alert('点击了按钮','点击OK关闭',null)}>
+ - 给搜索按钮/轮播图片添加点击事件   <br>
+   搜索:直接到<Buttoon> ps:<Button ==onPress==={()=>Alert.alert('点击了按钮','点击OK关闭',null)}><br>
+   轮播图/ListView : ==<TouchableHighlight>==
  - 状态栏目添加了网络请求状态/状态栏颜色  <br>
-  注意区分Android/ios不同表现 <StatusBar>
+  注意区分Android/ios不同表现,使用:==StatusBar==组件
