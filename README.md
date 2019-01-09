@@ -2,12 +2,13 @@
 业余时间学习下React-native, 感兴趣的可以来一起交流下
 > email: guokaigdg@gmail.com <br>
 > wechat:guokaigdg
+> 微博: @我叫猫叫佩奇
 
 #### 开发环境
 > eact-native-cli: 2.0.1 <br>
 > node: v8.9.4 <br>
 > macOS Mojave 版本10.14.1 <br>
-> 暂时ios在Simulator测试
+> 测试环境: react-native run-ios --simulator "iPhone 6"
 
 startDate: 2018/12/17
 
@@ -34,3 +35,6 @@ startDate: 2018/12/17
 - 优化将轮播图格式独立出来<br>
   多个格式放一个数组: style={[styles.advertismentContenr,{backgroundColor:'blue'}]}
 <img src = "https://img-blog.csdnimg.cn/2019010922561528.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70" width = '25%'>
+
+#### 2019/1/10
+- 使用JavaScript数组的map()方法进一步优化TouchableHighlight组件(优化轮播图)
