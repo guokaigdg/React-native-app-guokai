@@ -30,7 +30,7 @@ startDate: 2018/12/17
 
 #### 2019/1/9
 - 更换app图标 
-- 给商品区域创立一个
+- 给商品区域创立一个单个栏目,如图
 - 优化将轮播图格式独立出来<br>
   多个格式放一个数组: style={[styles.advertismentContenr,{backgroundColor:'blue'}]}
 <img src = "https://img-blog.csdnimg.cn/2019010922561528.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70" width = '25%'>
