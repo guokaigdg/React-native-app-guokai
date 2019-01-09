@@ -44,7 +44,7 @@ export default class App extends Component{  //主页面
           <TextInput style={styles.input} placeholder='搜索商品'>
           </TextInput>
           <Button style={styles.button} title='搜索'
-           onPress = {()=>Alert.alert('你点击了搜索按钮','点击OK关闭弹窗','no') }
+           onPress = {()=>Alert.alert('你点击了搜索按钮','点击OK关闭弹窗',null) }
           ></Button>
         </View>
 
