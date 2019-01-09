@@ -41,10 +41,10 @@ export default class App extends Component{  //主页面
           '商品4',
           '商品5',
           '商品6',
-          '商品6',
-          '商品6',
-          '商品6',
-          '商品6',
+          '商品7',
+          '商品8',
+          '商品9',
+          '商品10',
         ])
     };
   }
@@ -105,13 +105,10 @@ export default class App extends Component{  //主页面
             dataSource={this.state.dataSource}
             renderRow = {this._renderRow}
            />
-           {/* <Image style={{width: 51,height: 51,resizeMode: 'contain',}}
-          source={{uri:'https://img-blog.csdnimg.cn/20190109105105340.jpg',}}/> */}
         </View>
       </View>
     );
   }
-
   componentDidMount(){
     this._startTimer();
   }
@@ -129,15 +126,15 @@ export default class App extends Component{  //主页面
         this.refs.scrollView.scrollResponderScrollTo({ x:offSetX, y:0, animated:true});
     },2000);   //定时器间隔时间20000毫秒
   }
+//标签使用{value}的方法取值
   _renderRow = (rowData, sectionID, rowID)=> {
     return (
       <View style={styles.row}>
-        <Text> {rowData} </Text>
+        <Text> {rowData} </Text>  
       </View>
     );
   }
 }
-
 
 const styles = StyleSheet.create({
     container:{
