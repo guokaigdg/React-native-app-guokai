@@ -10,7 +10,6 @@
 > macOS Mojave 版本10.14.1 <br>
 > 测试环境: react-native run-ios --simulator "iPhone 6"
 
-startDate: 2018/12/17
 
 #### 进度
 > (2018-12-17 - 2019-02-05)
