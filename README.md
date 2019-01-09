@@ -1,7 +1,7 @@
 ### React-native 练手电商APP
 业余时间学习下React-native, 感兴趣的可以来一起交流下
 > email: guokaigdg@gmail.com <br>
-> wechat:guokaigdg
+> wechat:guokaigdg <br>
 > 微博: @我叫猫叫佩奇
 
 #### 开发环境
