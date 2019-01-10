@@ -38,4 +38,4 @@
 #### 2019/1/10
 - 使用JavaScript数组的map()方法进一步优化TouchableHighlight组件(优化轮播图)
 
-![image](https://img-blog.csdnimg.cn/20190111010609724.gif)
+<img src = "https://img-blog.csdnimg.cn/20190111014039891.gif" width = '25%'>
