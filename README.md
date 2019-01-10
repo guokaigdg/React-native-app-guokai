@@ -42,7 +42,11 @@
 - 优化搜索框样式borderRedius
 - 轮播图使用网络图片
 
+<img src = "https://img-blog.csdnimg.cn/20190111014039891.gif" width = '25%'>
+GIF:https://img-blog.csdnimg.cn/20190111014039891.gif
+
 #### 遗留问题
 - [ ] iPhone不同机型有刘海的跟没有刘海marginTop大小自动适应
 
-<img src = "https://img-blog.csdnimg.cn/20190111014039891.gif" width = '25%'>
+
+
