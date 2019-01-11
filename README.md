@@ -5,7 +5,7 @@
 > 微博: @我叫猫叫佩奇
 
 #### 开发环境
-> eact-native-cli: 2.0.1 <br>
+> react-native-cli: 2.0.1 <br>
 > node: v8.9.4 <br>
 > macOS Mojave 版本10.14.1 <br>
 > 测试环境: react-native run-ios --simulator "iPhone 6"
