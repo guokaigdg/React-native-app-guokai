@@ -140,7 +140,7 @@ const styles = StyleSheet.create({
       //padding:23,
     },
     searchbar:{
-      marginTop: Platform.OS === 'ios' ? 30 :0,   //状态栏
+      marginTop: Platform.OS === 'ios' ? 44 :0,   //状态栏
       height: 40,
       flexDirection: 'row',   //子元素在父容器中的排列位置 row横向,culumn纵向
       //justifyContent: 'center', //横向
