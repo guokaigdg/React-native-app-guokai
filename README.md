@@ -45,6 +45,15 @@
 <img src = "https://img-blog.csdnimg.cn/20190111014039891.gif" width = '25%'>
 GIF:https://img-blog.csdnimg.cn/20190111014039891.gif
 
+#### 2019/1/11
+- 给轮播图添加指示器
+- 加载网路图片/本地图片
+- 重新定义商品模型(布局)加优化 <br>
+  (给商品加图片加文字重新布局)
+  
+
+
+<img src = "https://img-blog.csdnimg.cn/20190112030407101.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70" width = '25%')>
 #### 遗留问题
 - [ ] iPhone不同机型有刘海的跟没有刘海marginTop大小自动适应
 
