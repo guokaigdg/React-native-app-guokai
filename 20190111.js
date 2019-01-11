@@ -62,6 +62,18 @@ export default class App extends Component{  //主页面
          { image: require('./images/ad-05.jpeg'),
          title: '商品7',
          subTitle: '描述1',  
+         },
+         { image: require('./images/ad-05.jpeg'),
+         title: '商品8',
+         subTitle: '描述1',  
+         },
+        { image: require('./images/ad-05.jpeg'),
+        title: '商品9',
+        subTitle: '描述1',  
+        },
+        { image: require('./images/ad-05.jpeg'),
+        title: '商品10',
+        subTitle: '描述1',  
         },
 
  
