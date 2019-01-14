@@ -108,7 +108,7 @@ export default class home extends Component{  //主页面
           }}></TextInput>
           <Button style={styles.button} title='搜索'onPress = 
           {()=> {
-            Alert.alert('搜索内容' + this.state.searchText,null,null);
+            Alert.alert('搜索内容: ' + this.state.searchText,null,null);
           }}></Button>
         </View>
 
