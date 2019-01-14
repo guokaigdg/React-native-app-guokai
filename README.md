@@ -59,7 +59,8 @@ GIF:https://img-blog.csdnimg.cn/20190111014039891.gif
 
 - [ ] iPhone不同机型有刘海的跟没有刘海marginTop大小自动适应
 
-#### 2091/1/12
--  实现了拖拽刷新 refreshContol
+#### 2019/1/12
+-  实现了拖拽下拉刷新 refreshContol
 -  添加页面跳转Navigator还没成功
-
+#### 2019/1/13
+- 无
