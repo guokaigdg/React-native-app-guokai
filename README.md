@@ -61,5 +61,7 @@ GIF:https://img-blog.csdnimg.cn/20190111014039891.gif
 
 #### 2019/1/12
 -  实现了拖拽下拉刷新 refreshContol
+-  在根目录下创建一个images保存图片以供取读
+
 #### 2019/1/13
--   添加页面跳转Navigator还没成功
+-  添加页面跳转Navigator还没成功
