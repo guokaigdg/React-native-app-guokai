@@ -66,3 +66,14 @@ GIF:https://img-blog.csdnimg.cn/20190111014039891.gif
 - 讲style 从App.js分离出来单独设置为style.js
 #### 2019/1/14
 -  添加页面跳转Navigator还没成功
+
+
+#### 2019/1/28
+- 安装react navigation 
+
+```
+npm install -save react-navigation
+npm install -save react-native-vector-icons
+```
+- 使用react navigation导航
+
