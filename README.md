@@ -75,5 +75,7 @@ GIF:https://img-blog.csdnimg.cn/20190111014039891.gif
 npm install -save react-navigation
 npm install -save react-native-vector-icons
 ```
+#### 2019/3/8
 - 使用react navigation导航
+- 官方中文网址https://reactnavigation.org/docs/zh-Hans/hello-react-navigation.html
 
