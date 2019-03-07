@@ -79,9 +79,6 @@ npm install -save react-native-vector-icons
 - 学习使用React avigation导航
 - 官方中文网址https://reactnavigation.org/docs/zh-Hans/hello-react-navigation.html
 
-#### 2019/3/8
+#### 2019/3/9
 - 学习使用Tab Navigation导航
-
-#### 2019/3/8
-
 - 学习使用Drawer Navigation导航
