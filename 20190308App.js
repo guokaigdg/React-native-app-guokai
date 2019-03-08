@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, Button } from 'react-native';
-import { createAppContainer, createStackNavigator, StackActions, NavigationActions} from 'react-navigation'; // Version can be specified in package.json
+import { createAppContainer, createStackNavigator, createDrawerNavigator,StackActions,createBottomTabNavigator} from 'react-navigation'; // Version can be specified in package.json
 
 class HomeScreen extends React.Component{
   render(){
@@ -29,7 +29,7 @@ class DetailsScreen extends React.Component {
     }
 }
 
-const AppNavigator = createStackNavigator({
+const AppNavigator = createStackNavigator({ 
   Home: {
     screen: HomeScreen,
     navigationOptions:()=>({
