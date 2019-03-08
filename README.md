@@ -43,7 +43,7 @@
 - 轮播图使用网络图片
 
 <img src = "https://img-blog.csdnimg.cn/20190111014039891.gif" width = '25%'>
-GIF:https://img-blog.csdnimg.cn/20190111014039891.gif
+
 
 #### 2019/1/11
 - 给轮播图添加指示器
