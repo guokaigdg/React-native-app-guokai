@@ -1,0 +1,47 @@
+import React from 'react';
+import { View, Text, Button,StyleSheet} from 'react-native';
+import { createAppContainer, createStackNavigator, createDrawerNavigator,createBottomTabNavigator} from 'react-navigation'; // Version can be specified in package.json
+import Iconicons from 'react-native-vector-icons/Ionicons';
+class Logo extends React.Component{
+  render(){
+    return(
+      <View style={{flex:1,alignItems:'center',justifyContent:'center'}}>
+      <Text style={{color:'red',fontSize: 20}}>首页</Text>
+      <Text>首页点击下面按钮跳转B-about</Text>
+      <Button 
+        title = "Go to B页面" 
+        onPress={() => this.props.navigation.navigate('About')} 
+      />
+      <Button 
+        title="打开Driver"   
+        onPress ={ ()=>this.props.navigation.openDrawer()}   //打开Drawer
+      />
+    </View>
+    );
+  }
+}
+class about extends React.Component {
+    render(){
+      return(
+        <View style={{flex:1,alignItems:'center',justifyContent:'center'}}>
+        <Text style={{color:'red',fontSize: 20}}>关于页面</Text>
+        <Text>点击下面按钮跳转是首页</Text>
+        <Button 
+          onPress={() => this.props.navigation.navigate('Logo')} 
+          title = "Go to 首页" 
+        />
+        <Button
+        title="Go back"
+        onPress ={ ()=>this.props.navigation.goBack()}
+      />
+      </View>
+      );
+    }
+}
+const AppNavigator = createDrawerNavigator({ 
+  Logo: {screen: Logo,},
+  About: {screen: about,}, 
+},);
+export default createAppContainer(AppNavigator);
+//在react-navigation升级后必须在外部包裹一层 createAppContainer(AppNavigator),
+//从源码看来createAppContainer是一个高阶组件包装了路由相关的代码，估计是为了分离view层和control层做出的修改。
