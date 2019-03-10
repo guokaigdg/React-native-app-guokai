@@ -25,15 +25,20 @@ class HomeScreen extends React.Component{
 class DetailsScreen extends React.Component {
     render(){
       const {navigation} = this.props;       
-      const itemId = navigation.getParam('itemId','86-ID');     //this.props.navigation.getParm() 获取上一个页传过来的数据
+      console.log(navigation.state.params.itemId);
+      const itemId = navigation.getParam('itemId','86-ID');     //this.props.navigation.getParam() 获取上一个页传过来的数据
+      const test = navigation.state.params.itemId               //ttest = navigation.state.params.itemId 同样可以获取上一个页传过来的数据
       const otherParam = navigation.getParam('otherParam','未接收到数据')
       const Name = navigation.getParam('name','未接收到数据')
+      
       return(
         <View style={{flex:1,alignItems:'center',justifyContent:'center'}}>
         <View>
           <Text>itemId : </Text>
           <Text style={{color:'red',fontSize: 20}}> {JSON.stringify(itemId)}</Text>
+          <Text>{JSON.stringify(test)} </Text>
         </View>
+        {/* JSON.stringify() 从一个对象中解析出字符串  */}
         <Text> A页面传递过来的参数: {JSON.stringify(otherParam)}</Text>
         <Text> Name: {JSON.stringify(Name)}</Text>
         <Button
