@@ -76,9 +76,14 @@ npm install -save react-navigation
 npm install -save react-native-vector-icons
 ```
 #### 2019/3/8
-- 学习使用React avigation导航
+- 使用React avigation导航
 - 官方中文网址https://reactnavigation.org/docs/zh-Hans/hello-react-navigation.html
 
 #### 2019/3/9
-- 学习使用Tab Navigation导航
-- 学习使用Drawer Navigation导航
+- 使用Tab Navigation导航
+- 使用Drawer Navigation导航
+#### 2019/3/10
+- 页面跳转的数据传递 
+> 1. 参数传递: navigate接受可选的第二个参数，以便将参数传递给要导航到的路由。例如：this.props.navigation.navigate('RouteName', {paramName:  'value'})。<br>
+>2. 读取参数：我们可以使用this.props.navigation.getParam读取参数<br>
+>3. 也可以使用 this.props.navigation.state.params作为getParam的替代方案， 如果未指定参数，它的值是 null。
