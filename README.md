@@ -83,3 +83,7 @@ npm install -save react-native-vector-icons
 > 1. 参数传递: navigate接受可选的第二个参数，以便将参数传递给要导航到的路由。例如：this.props.navigation.navigate('RouteName', {paramName:  'value'})。<br>
 >2. 读取参数：我们可以使用this.props.navigation.getParam读取参数<br>
 >3. 也可以使用 this.props.navigation.state.params作为getParam的替代方案， 如果未指定参数，它的值是 null。
+
+#### 2019/3/11
+- 设置标题栏显示的标题自定义标题样式
+- 独立设计组件引用组件
