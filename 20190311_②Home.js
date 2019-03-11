@@ -5,7 +5,7 @@ class LogoTitle extends React.Component{
   render(){
     return(
       <Image
-        source = {require('./images/40.jpeg')}
+        source = {require('./images/40.jpeg')}  //你本地图片路径
         style = {{width: 30, height: 30}}
       />
     );
