@@ -41,12 +41,10 @@ class HomeScreen extends React.Component{
              });
             } }
         />
-
-<Button 
+      <Button 
           title = "Go to Details2" 
           onPress={() => {
-            this.props.navigation.navigate('Details',{
-              
+            this.props.navigation.navigate('Details',{              
              });
             } }
         /> 
