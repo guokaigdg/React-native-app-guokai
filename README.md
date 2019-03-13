@@ -87,3 +87,5 @@ npm install -save react-native-vector-icons
 #### 2019/3/11
 - 设置标题栏显示的标题自定义标题样式
 - 独立设计组件引用组件
+#### 2019/3/12
+- 整合Login/Home/StackNavigator/DrawerNavigato/BottomTabNavigator做成简单Demo 
