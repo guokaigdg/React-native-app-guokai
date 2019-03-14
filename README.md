@@ -91,3 +91,6 @@ npm install -save react-native-vector-icons
 - 整合Login/Home/StackNavigator/DrawerNavigato/BottomTabNavigator做成简单Demo 
 #### 2019/3/13
 - 页面组件的navigationOptions静态属性内自定义标题
+
+#### 2019/3/14
+- 标题栏和其所属的页面之间的交互 数据传递
