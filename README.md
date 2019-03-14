@@ -94,3 +94,5 @@ npm install -save react-native-vector-icons
 
 #### 2019/3/14
 - 标题栏和其所属的页面之间的交互 数据传递
+- Math.floor(Math.random()) 生成随机数
+
