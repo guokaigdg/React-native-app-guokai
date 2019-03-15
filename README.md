@@ -96,3 +96,4 @@ npm install -save react-native-vector-icons
 - 标题栏和其所属的页面之间的交互 数据传递
 - Math.floor(Math.random()) 生成随机数
 
+<img src = "https://img-blog.csdnimg.cn/20190315153042444.gif" width = '25%'>
