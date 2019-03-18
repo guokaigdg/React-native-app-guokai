@@ -97,5 +97,7 @@ npm install -save react-native-vector-icons
 - Math.floor(Math.random()) 生成随机数
 
 <img src = "https://img-blog.csdnimg.cn/20190315153042444.gif" width = '25%'>
-####n 2019/3/18
+#### 2019/3/18
 - 使用图标 import Icon from 'react-native-vector-icons/Ionicons' 
+
+<img src = "https://img-blog.csdnimg.cn/20190319015048530.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70" width = '25%'>
