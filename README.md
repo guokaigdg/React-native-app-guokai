@@ -15,7 +15,7 @@
 > (2019-1-7 - 2019-？佛系时间)
 #### 2019/1/7
 - 创建第一个页面,并且创建一个轮播图
-<img src = "https://img-blog.csdnimg.cn/20190108013736540.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70" width = '25%'>
+- <img src = "https://img-blog.csdnimg.cn/20190108013736540.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70" width = '25%'>
 
 #### 2019/1/8
  - 给搜索按钮/轮播图片添加点击事件   <br>
@@ -29,7 +29,7 @@
 - 给商品区域创立一个单个栏目,如图
 - 优化将轮播图格式独立出来<br>
   多个格式放一个数组: style={[styles.advertismentContenr,{backgroundColor:'blue'}]}
-<img src = "https://img-blog.csdnimg.cn/2019010922561528.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70" width = '25%'>
+- <img src = "https://img-blog.csdnimg.cn/2019010922561528.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70" width = '25%'>
 
 #### 2019/1/10
 - 使用JavaScript数组的map()方法进一步优化TouchableHighlight组件(优化轮播图)
@@ -37,8 +37,7 @@
 - Chorm Console调试搜索结果
 - 优化搜索框样式borderRedius
 - 轮播图使用网络图片
-
-<img src = "https://img-blog.csdnimg.cn/20190111014039891.gif" width = '25%'>
+- <img src = "https://img-blog.csdnimg.cn/20190111014039891.gif" width = '25%'>
 
 
 #### 2019/1/11
@@ -46,10 +45,7 @@
 - 加载网路图片/本地图片
 - 重新定义商品模型(布局)加优化 <br>
   (给商品加图片加文字重新布局)
-  
-
-
-<img src = "https://img-blog.csdnimg.cn/20190112030407101.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70" width = '25%'>
+- <img src = "https://img-blog.csdnimg.cn/20190112030407101.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70" width = '25%'>
 
 #### 遗留问题
 
@@ -95,9 +91,8 @@ npm install -save react-native-vector-icons
 #### 2019/3/14
 - 标题栏和其所属的页面之间的交互 数据传递
 - Math.floor(Math.random()) 生成随机数
+- <img src = "https://img-blog.csdnimg.cn/20190315153042444.gif" width = '25%'>
 
-<img src = "https://img-blog.csdnimg.cn/20190315153042444.gif" width = '25%'>
 #### 2019/3/18
 - 使用图标 import Icon from 'react-native-vector-icons/Ionicons' 
-
-<img src = "https://img-blog.csdnimg.cn/20190319015048530.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70" width = '25%'>
+- <img src = "https://img-blog.csdnimg.cn/20190319015048530.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70" width = '25%'>
