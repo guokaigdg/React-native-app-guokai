@@ -98,5 +98,7 @@ npm install -save react-native-vector-icons
 - <img src = "https://img-blog.csdnimg.cn/20190319015048530.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70" width = '25%'>
 #### 2019/3/19
 - state数据传输
-### 2019/3/25
+#### 2019/3/25
 - 使用组件:加载指示器ActivityIndicator
+#### 2019/3/26
+- 点击变化容器:TouchableOpacity
