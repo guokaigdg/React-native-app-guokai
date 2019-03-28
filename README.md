@@ -102,3 +102,5 @@ npm install -save react-native-vector-icons
 - 使用组件:加载指示器ActivityIndicator
 #### 2019/3/26
 - 点击变化容器:TouchableOpacity
+#### 2019/3/27
+- 点击开关: <Switch />
