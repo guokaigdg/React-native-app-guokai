@@ -104,3 +104,7 @@ npm install -save react-native-vector-icons
 - 点击变化容器:TouchableOpacity
 #### 2019/3/27
 - 点击开关: <Switch />
+
+#### 2019/4/08
+- - <img src = "https://img-blog.csdnimg.cn/20190409120159563.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70" width = '25%'> 
+
