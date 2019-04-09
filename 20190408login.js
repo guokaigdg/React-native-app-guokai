@@ -29,7 +29,7 @@ class login extends React.Component{
                 <View style={styles.inputWrap}>
                   <Text> 账户: </Text>
                   <View style={styles.dividingLine} />
-                <TextInput  style={{marginTop:10}}
+                <TextInput  
                     placeholder ={"  Your Accounut"}
                     onChangeText = {(value)=>this.setState({
                         username:value,
@@ -40,7 +40,7 @@ class login extends React.Component{
                   <Text> 密码: </Text>
                   <View style={styles.dividingLine} />
                 <TextInput  
-                    style={{marginTop:7}}
+                   
                     secureTextEntry={true} 　//密文密码
                     placeholder ={"  Your password"}
                     onChangeText = {(value)=>this.setState({
@@ -50,8 +50,8 @@ class login extends React.Component{
                 </View>
                 <View style={styles.button}>
                 <Button  
-                    title={" 登录 "}
-                    color='white'
+                    title={"                             登录                              "}
+                    //color='white'
                     
                     onPress={() => {
                         this.props.navigation.navigate('Home')
@@ -66,7 +66,7 @@ class login extends React.Component{
 const styles = StyleSheet.create({
     inputWrap: {
         width: 200,
-        height: 44,
+        height: 45,
         marginTop: 10,
         //backgroundColor:'red',
         flexDirection: 'row',      //横向排列
@@ -90,7 +90,7 @@ const styles = StyleSheet.create({
         //flexDirection: 'row',      //横向排列
         justifyContent: "center",  
         alignItems: 'center',
-        backgroundColor: '#4876FF',
+        //backgroundColor: '#4876FF',
         borderRadius: 8,  //边框圆角
       }
     
