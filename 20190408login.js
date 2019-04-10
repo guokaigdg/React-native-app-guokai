@@ -40,7 +40,6 @@ class login extends React.Component{
                   <Text> 密码: </Text>
                   <View style={styles.dividingLine} />
                 <TextInput  
-                   
                     secureTextEntry={true} 　//密文密码
                     placeholder ={"  Your password"}
                     onChangeText = {(value)=>this.setState({
@@ -49,9 +48,9 @@ class login extends React.Component{
                 />
                 </View>
                 <View style={styles.button}>
-                <Button  
-                    title={"                             登录                              "}
-                    //color='white'
+                <Button   
+                    title="登录"
+                    color= {Platform.OS=='ios'? 'white': 'blue'  } //文本的颜色(iOS)，或是按钮的背景色(Android)
                     
                     onPress={() => {
                         this.props.navigation.navigate('Home')
@@ -66,7 +65,7 @@ class login extends React.Component{
 const styles = StyleSheet.create({
     inputWrap: {
         width: 200,
-        height: 45,
+        height: 38,
         marginTop: 10,
         //backgroundColor:'red',
         flexDirection: 'row',      //横向排列
@@ -85,12 +84,12 @@ const styles = StyleSheet.create({
       },
       button:{
         width: 200,
-        height: 44,
+        //height: 44,
         marginTop: 10,
         //flexDirection: 'row',      //横向排列
         justifyContent: "center",  
         alignItems: 'center',
-        //backgroundColor: '#4876FF',
+        backgroundColor: 'blue',
         borderRadius: 8,  //边框圆角
       }
     
