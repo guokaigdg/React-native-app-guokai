@@ -108,3 +108,14 @@ npm install -save react-native-vector-icons
 #### 2019/4/08
 - - <img src = "https://img-blog.csdnimg.cn/20190411095504998.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d1b2thaWdkZw==,size_16,color_FFFFFF,t_70" width = '25%'> 
 
+
+#### 2019/4/14
+- react-native-splash-screen 启动页
+- 使用第三方组件:
+1. 先分析项目中需要哪些第三方组件
+2. 挨个测试第三方组件的兼容性(主要是测试react native能兼容的最大版本) <br>
+    a)下载第三方组件开发者提供的演示 <br>
+    b)本地调试演示项目 <br>
+    c)如果演示项目调试成功, 并且满足功能需求, 就尝试将组件整合到你期望的rn版本中
+3. 确定要使用的reactnative版本
+
