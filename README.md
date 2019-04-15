@@ -119,3 +119,5 @@ npm install -save react-native-vector-icons
     c)如果演示项目调试成功, 并且满足功能需求, 就尝试将组件整合到你期望的rn版本中
 3. 确定要使用的reactnative版本
 
+#### 2019/4/15
+- react-native-splash-screen 实践
