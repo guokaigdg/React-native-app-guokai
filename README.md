@@ -120,4 +120,6 @@ npm install -save react-native-vector-icons
 3. 确定要使用的reactnative版本
 
 #### 2019/4/15
-- react-native-splash-screen 实践
+- react-native-splash-screen 启动页
+#### 2019/4/17
+- react-native-image-crop-picker 裁剪上传图片
